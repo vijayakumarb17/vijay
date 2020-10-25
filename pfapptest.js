@@ -1,4 +1,4 @@
-var app =angular.module("fbprofile",[]);
+var app =angular.module("profile",[]);
 
 app.controller('profcont', ['$scope' , function($scope) {
 	$scope.statsres="it";
