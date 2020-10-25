@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="homeapp.js"></script>
+  
+</head>
+<body ng-app = "homeapp" ng-controller="homecontrol">
+  <!-- nav -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">MOBILE SELLS</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="profile.html">SELL</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ./nav -->
+
+  <!-- main -->
+  <main class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- profile brief -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>EXCLUSIVE OFFERS!</p>
+          </div>
+        </div>
+        <!-- ./profile brief -->
+
+        <!-- friend requests -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Search your mobile model</h4>
+          </div>
+        </div>
+        <!-- ./friend requests -->
+      </div>
+      <div class="col-md-6">
+        <!-- post form -->
+        <form method="post" >
+          <div class="input-group">
+            <input class="form-control" ng-model="postcontent" type="text" name="content" placeholder="search">
+            <span class="input-group-btn">
+              <button ng-click="addRow()" class="btn btn-success" type="submit" name="post">SEARCH</button>
+            </span>
+          </div>
+        </form><hr>
+        <div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+			   <table> 
+			
+
+            <tr ng-repeat="p in postArray">
+               <!--  <td><label>{{$index + 1}}</label></td> -->
+                <td><label>{{p.post}}</label></td>
+				<td><label><br><br></label></td>
+                
+            </tr>
+			
+        </table>
+
+          </div>
+		  
+			  
+          <!-- ./post -->
+        </div>
+        <!-- ./feed -->
+      </div>
+      <div class="col-md-3">
+      <!-- add friend -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Add items to sell</h4>
+            <ul>
+              <li>
+                <a href="#">Redmi 5</a> 
+                <a href="#">[add]</a>
+				<a href="#">[decline]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ./main -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
