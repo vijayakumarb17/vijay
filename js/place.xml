@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="values.xsl"?> 
+ <Mobiles> 
+  <s> 
+   <name> Redmi </name> 
+   <ql >1</ql > 
+   <price>4000 per head</price> 
+   
+  </s> 
+  <s> 
+   <name> Realme </name> 
+   <ql >1</ql > 
+   <price>3500 per head</price> 
+   
+  </s> 
+  <s>  
+   <name> Iphone </name> 
+   <ql >1</ql > 
+   <price> 10000 per head</price> 
+   
+  </s> 
+  <s>  
+   <name> Sumsang </name> 
+   <ql >1</ql > 
+   <price> 5000 per head</price> 
+   
+  </s> 
+  <s>  
+   <name> Vivo </name> 
+   <ql >1</ql > 
+   <price> 4500 per head</price> 
+  
+  </s> 
+</Mobiles> 
